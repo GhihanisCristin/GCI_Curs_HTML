@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<p style="color:red; text-align:center"> <strong>XHTML</strong></p>
+<p style="text-align:center"> <strong>From Wikipedia, the free encyclopedia</strong></p>
+<p> <strong>XHTML</strong></p>
+<p> <strong><a href=" ">Cascading Style Sheets (CSS)</a></strong></p>
+<p> <strong><a href=" ">Character Encoding</a></strong></p>
+<p> <strong><a href=" ">Comparing Display Engines</a></strong></p>
+<p> <strong><a href=" ">Dynamic HTML</a></strong></p>
+<p> <strong><a href=" ">Font Family</a></strong></p>
+<p> <strong><a href=" ">HTML Editor</a></strong></p>
+<p> <strong><a href=" ">HTML Elements</a></strong></p>
+<p> <strong><a href=" ">Mnemonics in HTML</a></strong></p>
+<p> <strong><a href=" ">Scripts in HTML</a></strong></p>
+<p> <strong><a href=" ">Unicode in HTML</a></strong></p>
+<p> <strong><a href=" ">Web Colors</a></strong></p>
+<p> <strong><a href=" ">WWW Consortium (W3C)</a></strong></p>
+
+<p><strong>Extensible Hypertext Markup Language (XHTML)</strong> is part of the family of XML markup languages.
+ It mirrors or extends versions of the widely used <a href=" ">Hypertext Markup Language </a>(HTML), the language 
+ in which <a href=" ">Web pages</a> are formulated. XHTML 1.0 became a <a href=" ">World Wide Web Consortium</a> (W3C)
+ Recommendation on January 26, 2000. XHTML 1.1 became a W3C <a href=" ">Recommendation</a> on May 31, 2001. 
+ The standard known as XHTML5 is being developed as an XML adaptation of the HTML5 specification.
+</p>
+Contents
+1. Advantages
+2. Differences Between XHTML and HTML
+3. Versions of XHTML
+4. Valid XHTML Documents
+5. See also
+6. References
+        6.1. Validators
+
+Advantages
+- Lots of technologies developed for XML are applicable to XHTML. For example, XSLT and XPath.
+- XHTML analysis is simpler and quicker compared to HTML. Since XML syntax is stricter compared to the one in SGML, XHTML processing is possible even on low capacity cell phones.
+
+Differences Between XHTML and HTML
+•	Broadly, the XML rules require that all elements be closed, either by a separate closing tag or using self-closing syntax (e.g. <br/>), while HTML syntax permits some elements to be unclosed because either they are always empty (e.g. <input>) or their end can be determined implicitly ("omissibility", e.g. <p>).
+
+
+•	Some shorthand features in HTML are omitted in XML, such as (1) attribute minimization, where attribute values or their quotes may be omitted (e.g. <option selected> or <option selected=selected>, while in XML this must be expressed as <option selected="selected">); (2) element minimization may be used to remove elements entirely (such as <tbody> inferred in a table if not given); and (3) the rarely used SGML syntax for element minimization ("shorttag"), which most browsers do not implement.
+
+•	XML is case-sensitive for element and attribute names, while HTML is not (for example,<img alt="" /> instead of <IMG ALT="" />).
+
+
+•	There are numerous other technical requirements surrounding namespaces and precise parsing of whitespace and certain characters and elements. The exact parsing of HTML in practice has been undefined until recently; see the HTML5 specification ([HTML5]) for full details, or the working summary (HTML vs. XHTML).
+
+
+UTF-8 is a default encoding (unlike HTML, which has ISO 8859-1 as a default encoding).
+
+
+A character encoding may be specified at the beginning of an XHTML document in the XML declaration when the document is served using the application/xhtml+xml MIMEtype. (If an XML document lacks encoding specification, an XML parser assumes that the encoding is UTF-8 or UTF-16, unless the encoding has already been determined by a higher protocol.)
+
+The declaration may be optionally omitted because it declares as its encoding the default encoding. However, if the document instead makes use of XML 1.1 or another character encoding, a declaration is necessary. 
+
+In order to validate an XHTML document, a Document Type Declaration, or DOCTYPE, may be used. A DOCTYPE declares to the browser the Document Type Definition (DTD) to which the document conforms. A Document Type Declaration should be placed before the root element. The system identifier part of the DOCTYPE, which in these examples is the URL that begins with http://, need only point to a copy of the DTD to use, if the validator cannot locate one based on the public identifier (the other quoted string). It does not need to be the specific URL that is in these examples; in fact, authors are encouraged to use local copies of the DTD files when possible. The public identifier, however, must be character-for-character the same as in the examples.
+
+
+Versions of XHTML
+
+•	XHTML 1.0 Transitional is the XML equivalent of HTML 4.01 Transitional, and includes the presentational elements excluded from the strict version.
+
+•	XHTML 1.0 Strict is the XML equivalent to strict HTML 4.01, and includes elements and attributes that have not been marked deprecated in the HTML 4.01 specification. As of November 2015, XHTML 1.0 Strict is the document type used for the homepage of the website of the World Wide Web Consortium.
+
+•	XHTML 1.0 Frameset is the XML equivalent of HTML 4.01 Frameset, and allows for the definition of frameset documents—a common Web feature in the late 1990s.
+- XHTML 1.1 Module-based XHTML: authors can import additional properties to their markup.
+
+- XHTML Basic: it replaces the Basic Forms Module with the Forms Module, and adds the Intrinsic Events, Presentation, and Scripting modules. It also supports additional tags and attributes from other modules. This version became a W3C recommendation on 29 July 2008.
+
+XHTML Mobile Profile is based on XHTML Basic, it adds specific elements for cell phones.
+
+- XHTML 2.0. Between August 2002 and July 2006, the W3C released eight Working Drafts of XHTML 2.0, a new version of XHTML able to make a clean break from the past by discarding the requirement of backward compatibility.
+
+Valid XHTML Documents
+An XHTML document that conforms to an XHTML specification is said to be valid. Validity assures consistency in document code, which in turn eases processing, but does not necessarily ensure consistent rendering by browsers. A document can be checked for validity with the W3C Markup Validation Service. In practice, many web development programs provide code validation based on the W3C standards.
+
+
+In order to validate an XHTML document, a Document Type Declaration, or DOCTYPE, may be used. A DOCTYPE declares to the browser the Document Type Definition (DTD) to which the document conforms. A Document Type Declaration should be placed before the root element. Here are the most common DTDs for XHTML:
+
+XHTML 1.0 Strict 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+XHTML 1.0 Transitional 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+XHTML 1.0 Frameset 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"> 
+XHTML 1.1 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"> 
+The most common mistakes in XHTML are:
+
+- Unclosed elements (unlike HTML, XHTML requires closing all elements, including those that do not have a closing tag, such as <br />).
+- Absence of alternative texts for images (achieved using the alt attribute, which helps make the documents more accessible for devices unable to display images, or intended for visually impaired people).
+- Text directly in the <body> tag of the document (first declare a block element, then put content inside it).
+- Embedding block elements inside inline ones (for example, block elements <div> or <p> cannot be nested in the <a>, <span>, <em> inline elements, and so on).
+- Neglecting quotation marks for attribute values in (<a href=http://www.ru/> instead of <a href="http://www.ru/">).
+- Incorrect embedding of elements (constructs like <strong> <em> </ strong> </ em>).
+- Incorrect use of mnemonic links (eg.: & instead of & amp;)
+- Writing tags and/or attributes in capital letters (<DIV STYLE = "..."> instead of <div>).
+- Setting relative path to the DTD file in the <! DOCTYPE ...> tag copied from www.w3.org ("DTD / xhtml11.dtd" instead of "http://www.w3.org/TR/xhtml11/DTD/ xhtml11.dtd ").
+
+This list is not full, but it gives a general idea of the mistakes frequently made when compiling XHTML documents.
+
+A valid XHTML document can be provided with a special W3C banner confirming its validity.
+
+You can also find validators for CSS, HTML documents, etc. at the World Wide Web Consortium website.
+</body>
+</html>
