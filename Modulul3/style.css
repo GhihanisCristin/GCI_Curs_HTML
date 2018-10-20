@@ -1,0 +1,62 @@
+li {
+    color:cadetblue;
+    display:inline-block;
+    padding-left: 100px;
+}
+main {
+    display: flex;
+    background-color: bisque;
+  }
+  
+  article, section {
+    flex: 4;
+  }
+  
+  aside {
+    flex: 1;
+    margin-left: 10px;
+    padding: 1%;
+    background-color: azure;
+  }
+  
+  aside a {
+    display: block;
+    float: left;
+    width: 50%;
+  }
+  
+  aside img {
+    max-width: 100%;
+  }
+  
+  footer {
+    margin-top: 10px;
+  }
+
+  form {
+    margin:50px 0px; padding:0px;
+    text-align:center;
+    align-content:center;
+    }
+    
+label {
+    text-align: right;
+    width: 75px;
+    padding-right: 20px;
+    align-content:center;
+    }
+
+label,input {
+    width: 150px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    align-content:center;
+    }
+label,textarea {
+    width: 150px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    align-content:center;
+    }
+       
+       
