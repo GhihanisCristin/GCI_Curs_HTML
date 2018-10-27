@@ -1,0 +1,100 @@
+
+/*Selectors
+ul {
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    display: block;
+    color: black;
+    background-color: red;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  ul li a:hover{
+    color: red;
+    background-color: black;
+  }
+  
+    h1+p {
+    font-weight: bold;
+    color: blue;
+  }
+
+  p>a {
+      color: darkgreen;
+      font-weight: bold;
+  }
+*/
+
+/* pseudo-clases
+a {
+    color: blue;
+    font-weight: bold;
+  }
+  */
+  /* We want visited links to be the same color as non visited links */
+  /*a:visited {
+    color: blue;
+  }
+  
+  /* Highlight the link when it is hovered (mouse), activated or focused (keyboard) */
+ /* a:hover,
+  a:active,
+  a:focus {
+    color: darkred;
+    text-decoration: none;
+  }*/
+
+/* pseudo-classes #2
+ul {
+    padding: 0;
+  }
+  
+  li {
+    padding: 3px;
+    margin-bottom: 5px;
+    list-style-type: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+   li a:hover{
+    text-decoration: underline;
+    color: red;
+   
+  }
+  
+  li:nth-child(2n) {
+    background-color: #ccc;
+  }
+  
+  li:nth-child(2n+1) {
+    background-color: #eee;
+  }
+
+  [href^=http]::after {
+    content: '⤴';
+  }*/
+
+
+ p::first-line{
+    font-weight: bold;
+  }
+  
+  p::first-letter {
+    font-size: 3em;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    border: 1px solid black;
+    background: red;
+    display: block;
+    float: left;
+    padding: 2px;
+    margin-right: 4px;
+  }
