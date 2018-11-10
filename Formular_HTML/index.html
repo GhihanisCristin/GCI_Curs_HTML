@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form app</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <form action="https://www.google.com/search" method="get">
+            <div>
+                <label for="First name">First Name:</label>
+                <input type="text" id="fname" name="fuser_name">
+                <label for="Last name">Last Name:</label>
+                <input type="text" id="lname" name="luser_name">
+            </div>
+            <div>
+                <label for="Client">Client of:</label> <br>
+                <select multiple id="multiple" name="Client">
+                    <option value="Telekom">Telekom</option>
+                    <option value="Vodafone">Vodafone</option>
+                    <option value="Orange">Orange</option>
+                    <option value="Digi">Digi</option>
+                </select>
+            </div>
+            <div>
+                <label for="mail">E-mail (optional):</label> <br>
+                <input type="email" id="mail" name="user_mail" placeholder="you@example.com">
+            </div>
+            <div>
+                <label for="address">Address:</label> <br>
+                <textarea id="adress" name="address" placeholder="1234 Main St"></textarea>
+            </div>
+            <div>
+                <label for="country">Country:</label>
+                <select id="Country" name="country">
+                    <option value="" disabled selected>Choose</option>
+                    <option>Texas</option>
+                    <option>Florida</option>
+                    <option>Alaska</option>
+                </select>
+                <label for="state">State:</label>
+                <select id="state" name="state">
+                    <option value="" disabled selected>Choose</option>
+                    <option>One state</option>
+                    <option>Second state</option>
+                    <option>Last state</option>
+                </select>
+            </div>
+            <div>
+                <input type="checkbox" name="Sameas" value="address">
+                <label for="Sameas">Shipping address is the same as the billing address</label>                
+            </div>
+            <div>
+                <label for="payment"><strong>Payment:</strong></label> <br>
+                <input type="radio" name="payment" value="Credit Card" checked>Credit Card <br>
+                <input type="radio" name="payment" value="Debit Card" >Debit Card <br>
+                <input type="radio" name="payment" value="Paypal" >Paypal <br>
+            </div>
+            <div>
+                <button type="submit">Continue to checkout</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>

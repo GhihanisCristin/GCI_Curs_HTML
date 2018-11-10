@@ -1,0 +1,17 @@
+form div {
+    margin: 10px;
+}
+form {
+    padding-left: 20%;
+    padding-right: 20%;
+    border: 2px;
+    border-style: solid;
+    align-self: center;
+    margin: 2px;
+}
+form div button {
+    background: cornflowerblue;
+    border-style: inset;
+    border-radius: 5px;
+    width: 100%;
+}
