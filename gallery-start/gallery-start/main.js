@@ -16,4 +16,9 @@ button.addEventListener("click", ()=>{
   /*alert('Tup!!');*/
   document.querySelector('.overlay').setAttribute('style', 'background-color:rgba(150,150,150,0.6)');
 })
+var button = document.querySelector('#revert');
+button.addEventListener("click", ()=>{
+  /*alert('Tup!!');*/
+  document.querySelector('.overlay').setAttribute('style', 'background-color:rgba(0,0,0,0)');
+})
 
